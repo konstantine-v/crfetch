@@ -7,19 +7,28 @@ The idea is for it to work much like NeoFetch
 ## Installation
 
 ``` sh
-shards
-cake
+$ shards && cake # => ./bin/crfetch
 ```
 
 ## Usage
 
 ``` sh
-$ crfetch
+$ ./bin/crfetch
 ```
 
 ## Development
 
 Follow install instructions.
+
+Make sure to run tests:
+
+``` sh
+$ crystal spec
+```
+
+All tests should pass before developing. If tests do not pass make sure to look
+at the log and figure out why, if it's a bug or a feature that you're wanting then
+make an issue and if you want to then make a pull request for it.
 
 ## Contributing
 
