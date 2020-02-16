@@ -40,12 +40,14 @@ module CrFetch
       print "CPU Physical Cores: "
       puts Shell.run(cpu_core_log)
 
-      # Todo:
-      # Add Logic based on Admiral flags
-      # Migrate the prints and puts to Crystal tablo cli tool
-      # Use Admiral for cli arguments and flags to fully customize what is shown
     end
   end
 
   puts GetOS.new
+
+  # Todo:
+  # Breakout the classes into their own files
+  # Add Logic based on Admiral flags
+  # Migrate the prints and puts to Crystal tablo cli tool
+  # Use Admiral for cli arguments and flags to fully customize what is shown
 end

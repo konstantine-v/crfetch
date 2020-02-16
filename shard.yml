@@ -1,12 +1,12 @@
-name: cr_fetch
+name: crfetch
 crystal: 0.33.0
 license: MIT
-version: 0.1.1
+version: 0.1.2
 authors:
   - Konstantine <konstantinev@protonmail.com>
 targets:
   cr_fetch:
-    main: src/cr_fetch.cr
+    main: src/crfetch.cr
 dependencies:
   shell:
     github: maiha/shell.cr
