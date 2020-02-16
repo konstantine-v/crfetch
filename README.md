@@ -2,21 +2,28 @@
 
 A simple fetch program to print your system details for that sweet /g/ street cred
 
+The idea is for it to work much like NeoFetch
+
 ## Installation
 
-TODO: Write installation instructions here
+``` sh
+shards
+cake
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+``` sh
+$ crfetch
+```
 
 ## Development
 
-TODO: Write development instructions here
+Follow install instructions.
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/cr_fetch/fork>)
+1. Fork it (<https://github.com/materialfuture/cr_fetch/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -24,4 +31,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Konstantine](https://github.com/your-github-user) - creator and maintainer
+- [Konstantine](https://github.com/materialfuture) - creator and maintainer
