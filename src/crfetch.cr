@@ -2,7 +2,7 @@ require "shell"
 require "./crfetch/**"
 
 module Fetch
-  VERSION = "0.1.1"
+  VERSION = "0.1.4"
   @@os : String = ""
   @@os = Fetch::OS.new
   puts @@os
