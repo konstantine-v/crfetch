@@ -32,3 +32,13 @@ Follow install instructions.
 ## Contributors
 
 - [Konstantine](https://github.com/materialfuture) - creator and maintainer
+
+## Notes
+
+Look into turning the lookup for system info into a Library after completing the
+basic version
+
+## Todo
+
+- Add Admiral Shard
+- Add the tablo (or other) Shard to cleanup output
