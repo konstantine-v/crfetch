@@ -50,16 +50,18 @@ basic version
 ## Todo
 
 ### Needs
-- [] Get Operating System/Distro for all main machine types
-- [] Get CPU Specs including number of cores (logical and physical)
-- [] Get Memory; Total, Taken, Available
-- [] Get GPU, Brand, VRAM, etc.
+- [ ] Get Operating System/Distro for all main machine types
+- [ ] Get CPU Specs including number of cores (logical and physical)
+- [ ] Get Memory; Total, Taken, Available
+- [ ] Get GPU, Brand, VRAM, etc.
 
 ### Extras
-- [] Get Shell used (fish, zsh, bash, etc)
-- [] Get Packages installed via whatever package manager
+- [ ] Get Shell used (fish, zsh, bash, etc)
+- [ ] Get Packages installed via whatever package manager
+- [ ] CPU temperatures, speed, etc.
 
 ### QOL
 - [x] Add Shell shard to make shell commands easier to execute
-- [] Add Admiral Shard to have flags and arguments
-- [] Add the tablo (or other) Shard to cleanup output
+- [ ] Integrate Admiral Shard to have flags and arguments
+- [ ] Integrate the tablo (or other) Shard to cleanup output
+- [ ] Break out MacOS commands via grep or awk
