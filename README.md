@@ -49,5 +49,17 @@ basic version
 
 ## Todo
 
-- Add Admiral Shard to have flags and arguments
-- Add the tablo (or other) Shard to cleanup output
+### Needs
+- [] Get Operating System/Distro for all main machine types
+- [] Get CPU Specs including number of cores (logical and physical)
+- [] Get Memory; Total, Taken, Available
+- [] Get GPU, Brand, VRAM, etc.
+
+### Extras
+- [] Get Shell used (fish, zsh, bash, etc)
+- [] Get Packages installed via whatever package manager
+
+### QOL
+- [x] Add Shell shard to make shell commands easier to execute
+- [] Add Admiral Shard to have flags and arguments
+- [] Add the tablo (or other) Shard to cleanup output

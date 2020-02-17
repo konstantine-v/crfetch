@@ -2,22 +2,17 @@ require "shell"
 require "./crfetch/**"
 
 module Fetch
-  VERSION = "0.1.4"
-  @@os : String = ""
-  @@os = Fetch::OS.new
-  puts @@os
+  VERSION = "0.1.5"
+  OS_G    = Fetch::OS.new.to_s
 
-  # if flags.cpu, plus default
+  #
+  # CPU - In fo about your CPU
+  #
+  cpu = Fetch::CPU.new
   print "CPU: "
-  puts Shell.run(Fetch::CPU.new(@@os).to_s)
-
-  # print "CPU Logical Cores: "
-  # puts Shell.run(cpu_core_log)
-
-  # print "CPU Physical Cores: "
-  # puts Shell.run(cpu_core_log)
-
-  # Todo:
-  # Add Logic based on Admiral flags
-  # Migrate the prints and puts to Crystal tablo cli tool
+  puts Shell.run(cpu.cpu_info)
+  print "Logical Cores: "
+  puts Shell.run(cpu.cpu_core_log)
+  print "Physical Cores: "
+  puts Shell.run(cpu.cpu_core_phy)
 end
