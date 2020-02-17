@@ -6,6 +6,11 @@ module Fetch
   OS_G    = Fetch::OS.new.to_s
 
   #
+  # ASCII of Disctro or OS Logo
+  #
+  puts Fetch::ASCII.new
+
+  #
   # CPU - In fo about your CPU
   #
   cpu = Fetch::CPU.new
@@ -15,4 +20,5 @@ module Fetch
   puts Shell.run(cpu.cpu_core_log)
   print "Physical Cores: "
   puts Shell.run(cpu.cpu_core_phy)
+
 end
