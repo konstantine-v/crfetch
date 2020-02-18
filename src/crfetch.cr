@@ -2,7 +2,7 @@ require "shell"
 require "./crfetch/**"
 
 module Fetch
-  VERSION = "0.1.5"
+  VERSION = "0.1.6"
   OS_G    = Fetch::OS.new.to_s
 
   #
@@ -22,6 +22,6 @@ module Fetch
   # Memory - Info about your computer's memories
   #
   mem = Fetch::Memory.new
-  puts "Total Memory: #{Shell.run(mem.total)} Mb"
+  puts "Total Memory: #{Shell.run(mem.total)}"
 
 end

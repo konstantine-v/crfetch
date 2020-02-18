@@ -12,8 +12,17 @@ $ shards && cake # => ./bin/crfetch
 
 ## Usage
 
+After making with cake run the binary
 ``` sh
 $ ./bin/crfetch
+```
+
+You can create an alias for this so it's easier to access
+
+The idea is that it'll work like this to specify what you want to output
+
+``` sh
+$ crfetch -c -i -cc
 ```
 
 ## Development
@@ -54,7 +63,7 @@ basic version
 - [ ] Get CPU Specs including number of cores (logical and physical)
 - [ ] Get Memory; Total, Taken, Available
 - [ ] Get GPU, Brand, VRAM, etc.
-
+- [ ] Get HDD/SSD info, 
 ### Extras
 - [ ] Get Shell used (fish, zsh, bash, etc)
 - [ ] Get Packages installed via whatever package manager
