@@ -1,4 +1,3 @@
-
 class Fetch::ASCII
   def self.new
     case OS_G # TODO: Change to distro
@@ -21,6 +20,5 @@ class Fetch::ASCII
      ;KMMMMMMMWXXWMMMMMMMk.
        .cooc,.    .,coo:."
     end
-
   end
 end

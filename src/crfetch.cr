@@ -22,6 +22,5 @@ module Fetch
   # Memory - Info about your computer's memories
   #
   mem = Fetch::Memory.new
-  puts "Total Memory: #{Shell.run(mem.total)}"
-
+  puts "Total Memory (Mb): #{Shell.run(mem.total)}"
 end
