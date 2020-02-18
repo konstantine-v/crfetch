@@ -11,14 +11,17 @@ module Fetch
   puts Fetch::ASCII.new
 
   #
-  # CPU - In fo about your CPU
+  # CPU - Info about your CPU
   #
   cpu = Fetch::CPU.new
-  print "CPU: "
-  puts Shell.run(cpu.cpu_info)
-  print "Logical Cores: "
-  puts Shell.run(cpu.cpu_core_log)
-  print "Physical Cores: "
-  puts Shell.run(cpu.cpu_core_phy)
+  puts "CPU: #{Shell.run(cpu.cpu_info)}"
+  puts "Logical Cores: #{Shell.run(cpu.cpu_core_log)}"
+  puts "Physical Cores: #{Shell.run(cpu.cpu_core_phy)}"
+
+  #
+  # Memory - Info about your computer's memories
+  #
+  mem = Fetch::Memory.new
+  puts "Total Memory: #{Shell.run(mem.total)} Mb"
 
 end
