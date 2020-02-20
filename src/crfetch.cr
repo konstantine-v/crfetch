@@ -2,7 +2,7 @@ require "shell"
 require "./crfetch/**"
 
 module Fetch
-  VERSION = "0.1.6"
+  VERSION = "0.1.7"
   OS_G    = Fetch::OS.new.to_s
 
   #
@@ -22,5 +22,11 @@ module Fetch
   # Memory - Info about your computer's memories
   #
   mem = Fetch::Memory.new
-  puts "Total Memory (Mb): #{Shell.run(mem.total)}"
+  puts "Total Memory (Gb): #{Shell.run(mem.total)}"
+
+  #
+  # GPU - Get Info About the GPU Driver is being used
+  #
+  gpu = Fetch::GPU.new
+  puts "GPU Driver: #{Shell.run(gpu.gpu_driver)}"
 end

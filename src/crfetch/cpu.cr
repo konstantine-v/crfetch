@@ -22,7 +22,7 @@ class Fetch::CPU
   end
 
   # Defining Methods
-  def cpu_info # Fetch::GetCPU.new.cpu
+  def cpu_info # Fetch::CPU.new.cpu
     @@cpu_sys
   end
 
