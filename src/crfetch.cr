@@ -11,6 +11,11 @@ module Fetch
   puts Fetch::ASCII.new
 
   #
+  # Memory - Info about your computer's memories
+  #
+  puts "Distro: #{OS_G}"
+
+  #
   # CPU - Info about your CPU
   #
   cpu = Fetch::CPU.new
@@ -22,7 +27,7 @@ module Fetch
   # Memory - Info about your computer's memories
   #
   mem = Fetch::Memory.new
-  puts "Total Memory (Gb): #{Shell.run(mem.total)}"
+  puts "Total Memory: #{Shell.run(mem.total).chomp} GB"
 
   #
   # GPU - Get Info About the GPU Driver is being used

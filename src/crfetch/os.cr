@@ -1,16 +1,16 @@
 class Fetch::OS # Call once then store as a constant variablea
   # This grabs the kernal (ie, Darwin => MacOS, Arch => Arch)
   def self.new
-    os = Shell.run("uname -s").to_s # TODO: remove \n via grep awk or something
+    os = Shell.run("uname -s").to_s.chomp # TODO: remove \n via grep awk or something
 
     case os
-    when "Darwin\n" # Works
+    when "Darwin" # Works
       os = "MacOS"
-    when "Linux\n" || "GNU\n" # TODO: Test on GNU distro
+    when "Linux" || "GNU" # TODO: Test on GNU distro
       os = "Linux"
-    when "CYGWIN\n" || "MSYS\n" || "MINGW\n" # TODO: Test on Windows Machine
+      # when "CYGWIN\n" || "MSYS\n" || "MINGW\n" # TODO: Test on Windows Machine
       os = "Windows"
-    when "BSD\n" || "DragonFly\n" || "Bitrig\n" # TODO: Test on BSD
+      # when "BSD\n" || "DragonFly\n" || "Bitrig\n" # TODO: Test on BSD
       os = "BSD"
     else
       os = "error"
